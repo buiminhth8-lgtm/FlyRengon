@@ -12,6 +12,19 @@
         <RadioButton android:id="@+id/satelliteMap" android:layout_width="wrap_content"
             android:layout_height="48dp" android:text="@string/satellite_map" />
     </RadioGroup>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:paddingHorizontal="12dp">
+        <CheckBox android:id="@+id/showGeofences" android:layout_width="0dp"
+            android:layout_weight="1" android:layout_height="48dp" android:checked="true"
+            android:text="@string/show_geofences" />
+        <Button android:id="@+id/geofenceOverview" android:layout_width="wrap_content"
+            android:layout_height="48dp" android:text="@string/geofence_overview" />
+    </LinearLayout>
+    <Button android:id="@+id/dataManagement" android:layout_width="match_parent"
+        android:layout_height="48dp" android:text="@string/data_management" />
+    <TextView android:id="@+id/geofenceNotice" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:paddingHorizontal="12dp" android:paddingVertical="4dp"
+        android:text="@string/geofence_loading" android:textSize="12sp" android:textColor="#923535" />
     <TextView android:id="@+id/keyNotice" android:layout_width="match_parent"
         android:layout_height="wrap_content" android:padding="12dp" android:background="#FFF1CF"
         android:textColor="#744C08" android:text="@string/key_missing" />
@@ -30,6 +43,9 @@
             android:layout_gravity="bottom|start" android:padding="6dp" android:background="#EFFFFFFF"
             android:text="@string/attribution" android:textColor="#17324D" android:textSize="12sp" />
     </FrameLayout>
+    <TextView android:id="@+id/geofenceResult" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:paddingHorizontal="12dp" android:paddingTop="8dp"
+        android:text="@string/geofence_query_hint" android:textColor="#923535" android:textSize="13sp" />
     <TextView android:id="@+id/mapStatus" android:layout_width="match_parent"
         android:layout_height="wrap_content" android:padding="12dp" android:textColor="#17324D"
         android:text="@string/map_hint" android:textSize="13sp" />

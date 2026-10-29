@@ -55,3 +55,23 @@ https://lbs.tianditu.gov.cn/server/MapService.html
 - Lint：0 errors、15 warnings，主要为原模板残留资源、依赖/targetSdk 提示及布局样式建议。
 - APK：`app/build/outputs/apk/debug/app-debug.apk`。
 - 当前无已连接的 Android 设备，未提供实际天地图 Key，尚未进行真机瓦片加载和交互验收。
+
+## 行政区电子围栏预览
+
+本次采用用户提供工具包中的 14 国 Natural Earth 低精度 GeoJSON。在地图中启用“围栏预览”可看到红色多边形；“区域总览”缩小至全球；长按可查询所有命中区域。北京初始位置不在这 14 国范围内，可将地图移至日本、俄罗斯或美国等区域演示。
+
+这份数据是 1:1.1 亿行政边界预览，未包含三个 ADM1 地区，也未包含航空限制空域规则。命中结果仅用于 Demo，不作为实际禁飞判定。GeoJSON 坐标为经度、纬度，区域支持孔洞、多个岛屿、重叠与切分后的日期线。
+
+数据文件位于 `app/src/main/assets/geofences/`，可选 Python 预处理工具位于 `tools/geofences/`。三份输入的采用/去重结果、脚本问题与后续数据替换条件见 `tools/geofences/ADOPTION_REVIEW.md`。原始输入 SHA256 已记录于同目录 `input_checksums.json`。
+
+围栏 JVM 测试：
+
+```powershell
+./gradlew.bat :app:testDebugUnitTest :app:assembleDebug :app:lintDebug
+```
+
+## 围栏数据管理与设备迁移
+
+地图提供数据管理入口，支持区域搜索、定位、单区显隐、编辑名称/版本/来源、导入 GeoJSON 或迁移 ZIP、导出 ZIP 和恢复内置预览。当前数据保存到应用私有目录，重启后自动恢复。
+
+原设备导出 `FlyRegon-geofences.zip` → 将文件传至新设备 → 新设备选择“导入数据”并确认即可。迁移包保存区域、原始来源属性与单区显示设置，不保存天地图 Key 或地图缓存。详情及数据格式见 `tools/geofences/MIGRATION.md`。

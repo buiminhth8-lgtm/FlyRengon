@@ -1,4 +1,12 @@
-<resources>
+<resources><string name="data_management">围栏数据 · 区域列表 / 导入 / 导出</string><string name="dataset_summary">%1$s · %2$s\n%3$d 个区域（显示 %4$d 个）· %5$s\n红色：区域 / 橙色：选中 · 导入数据未经认证</string>
+    <string name="show_geofences">显示围栏</string>
+    <string name="geofence_overview">区域总览</string>
+    <string name="geofence_loading">正在加载围栏预览…</string>
+    <string name="geofence_loaded">%1$d 个行政区围栏 · Natural Earth 1:1.1 亿 · 仅演示，非正式禁飞数据</string>
+    <string name="geofence_failed">围栏数据加载失败，无法判断区域。请检查数据文件。</string>
+    <string name="geofence_query_hint">长按查询选点所属区域</string>
+    <string name="geofence_matches">命中当前数据区域：%1$s</string>
+    <string name="geofence_no_match">未命中当前区域数据（不代表允许飞行）</string>
     <string name="app_name">FlyRegon</string>
     <string name="map_title">天地图 · 地图 Demo</string>
     <string name="vector_map">矢量地图</string>
