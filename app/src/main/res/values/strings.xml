@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FlyRegon</string>
+    <string name="map_title">天地图 · 地图 Demo</string>
+    <string name="vector_map">矢量地图</string>
+    <string name="satellite_map">卫星影像</string>
+    <string name="zoom_in">放大地图</string>
+    <string name="zoom_out">缩小地图</string>
+    <string name="reset_map">复位</string>
+    <string name="key_missing">尚未配置天地图 Key：请在 local.properties 添加 TIANDITU_KEY 后重新编译。当前已暂停瓦片请求。</string>
+    <string name="map_hint">双指缩放 · 拖动浏览 · 长按添加标记</string>
+    <string name="attribution">© 天地图 · 国家地理信息公共服务平台</string>
+    <string name="marker_title">长按选点</string>
+    <string name="coordinate_format">纬度 %1$.5f，经度 %2$.5f</string>
+    <string name="status_format">中心 %1$.5f, %2$.5f · 层级 %3$.1f\n双指缩放 · 长按标点</string>
+</resources>

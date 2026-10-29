@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#F4F7FA">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:padding="16dp" android:text="@string/map_title" android:textSize="22sp"
+        android:textStyle="bold" android:textColor="#17324D" />
+    <RadioGroup android:id="@+id/mapType" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal" android:paddingHorizontal="12dp">
+        <RadioButton android:id="@+id/vectorMap" android:layout_width="wrap_content"
+            android:layout_height="48dp" android:text="@string/vector_map" android:checked="true" />
+        <RadioButton android:id="@+id/satelliteMap" android:layout_width="wrap_content"
+            android:layout_height="48dp" android:text="@string/satellite_map" />
+    </RadioGroup>
+    <TextView android:id="@+id/keyNotice" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:padding="12dp" android:background="#FFF1CF"
+        android:textColor="#744C08" android:text="@string/key_missing" />
+    <FrameLayout android:id="@+id/mapContainer" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="end|top" android:layout_margin="8dp" android:orientation="vertical">
+            <Button android:id="@+id/zoomIn" android:layout_width="56dp" android:layout_height="48dp"
+                android:text="+" android:contentDescription="@string/zoom_in" />
+            <Button android:id="@+id/zoomOut" android:layout_width="56dp" android:layout_height="48dp"
+                android:text="−" android:contentDescription="@string/zoom_out" />
+            <Button android:id="@+id/resetMap" android:layout_width="72dp" android:layout_height="48dp"
+                android:text="@string/reset_map" />
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start" android:padding="6dp" android:background="#EFFFFFFF"
+            android:text="@string/attribution" android:textColor="#17324D" android:textSize="12sp" />
+    </FrameLayout>
+    <TextView android:id="@+id/mapStatus" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:padding="12dp" android:textColor="#17324D"
+        android:text="@string/map_hint" android:textSize="13sp" />
+</LinearLayout>

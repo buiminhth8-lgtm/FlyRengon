@@ -1,0 +1,206 @@
+{
+  "warning": "LOW RESOLUTION PREVIEW ONLY. DO NOT USE FOR ENFORCEMENT OR NEAR-BORDER ELECTRONIC FENCES.",
+  "scale": "Natural Earth 1:110m",
+  "features": [
+    {
+      "id": "country_PRK",
+      "name_zh": "朝鲜",
+      "type": "MultiPolygon",
+      "bbox": [
+        124.265625,
+        37.669071,
+        130.780007,
+        42.985387
+      ],
+      "polygons": 2,
+      "source_year": "reference dataset release unknown",
+      "source_license": "Natural Earth public domain"
+    },
+    {
+      "id": "country_SOM",
+      "name_zh": "索马里",
+      "type": "Polygon",
+      "bbox": [
+        40.98105,
+        -1.68325,
+        51.13387,
+        12.02464
+      ],
+      "polygons": 1,
+      "source_year": "reference dataset release unknown",
+      "source_license": "Natural Earth public domain"
+    },
+    {
+      "id": "country_CAF",
+      "name_zh": "中非共和国",
+      "type": "Polygon",
+      "bbox": [
+        14.459407,
+        2.26764,
+        27.374226,
+        11.142395
+      ],
+      "polygons": 1,
+      "source_year": "reference dataset release unknown",
+      "source_license": "Natural Earth public domain"
+    },
+    {
+      "id": "country_SSD",
+      "name_zh": "南苏丹",
+      "type": "Polygon",
+      "bbox": [
+        23.88698,
+        3.509172,
+        35.298007,
+        12.248008
+      ],
+      "polygons": 1,
+      "source_year": "reference dataset release unknown",
+      "source_license": "Natural Earth public domain"
+    },
+    {
+      "id": "country_IRN",
+      "name_zh": "伊朗",
+      "type": "Polygon",
+      "bbox": [
+        44.109225,
+        25.078237,
+        63.316632,
+        39.713003
+      ],
+      "polygons": 1,
+      "source_year": "reference dataset release unknown",
+      "source_license": "Natural Earth public domain"
+    },
+    {
+      "id": "country_SYR",
+      "name_zh": "叙利亚",
+      "type": "Polygon",
+      "bbox": [
+        35.700798,
+        32.312938,
+        42.349591,
+        37.229873
+      ],
+      "polygons": 1,
+      "source_year": "reference dataset release unknown",
+      "source_license": "Natural Earth public domain"
+    },
+    {
+      "id": "country_YEM",
+      "name_zh": "也门",
+      "type": "Polygon",
+      "bbox": [
+        42.604873,
+        12.58595,
+        53.108573,
+        19.000003
+      ],
+      "polygons": 1,
+      "source_year": "reference dataset release unknown",
+      "source_license": "Natural Earth public domain"
+    },
+    {
+      "id": "country_LBY",
+      "name_zh": "利比亚",
+      "type": "Polygon",
+      "bbox": [
+        9.319411,
+        19.58047,
+        25.16482,
+        33.136996
+      ],
+      "polygons": 1,
+      "source_year": "reference dataset release unknown",
+      "source_license": "Natural Earth public domain"
+    },
+    {
+      "id": "country_RUS",
+      "name_zh": "俄罗斯",
+      "type": "MultiPolygon",
+      "bbox": [
+        -180.0,
+        41.151416,
+        180.0,
+        81.2504
+      ],
+      "polygons": 14,
+      "source_year": "reference dataset release unknown",
+      "source_license": "Natural Earth public domain"
+    },
+    {
+      "id": "country_USA",
+      "name_zh": "美国",
+      "type": "MultiPolygon",
+      "bbox": [
+        -171.791111,
+        18.91619,
+        -66.96466,
+        71.357764
+      ],
+      "polygons": 10,
+      "source_year": "reference dataset release unknown",
+      "source_license": "Natural Earth public domain"
+    },
+    {
+      "id": "country_ISR",
+      "name_zh": "以色列",
+      "type": "Polygon",
+      "bbox": [
+        34.265433,
+        29.501326,
+        35.836397,
+        33.277426
+      ],
+      "polygons": 1,
+      "source_year": "reference dataset release unknown",
+      "source_license": "Natural Earth public domain"
+    },
+    {
+      "id": "country_TUR",
+      "name_zh": "土耳其",
+      "type": "MultiPolygon",
+      "bbox": [
+        26.043351,
+        35.821535,
+        44.79399,
+        42.141485
+      ],
+      "polygons": 2,
+      "source_year": "reference dataset release unknown",
+      "source_license": "Natural Earth public domain"
+    },
+    {
+      "id": "country_JPN",
+      "name_zh": "日本",
+      "type": "MultiPolygon",
+      "bbox": [
+        129.408463,
+        31.029579,
+        145.543137,
+        45.551483
+      ],
+      "polygons": 3,
+      "source_year": "reference dataset release unknown",
+      "source_license": "Natural Earth public domain"
+    },
+    {
+      "id": "country_UKR",
+      "name_zh": "乌克兰",
+      "type": "Polygon",
+      "bbox": [
+        22.085608,
+        45.293308,
+        40.080789,
+        52.335075
+      ],
+      "polygons": 1,
+      "source_year": "reference dataset release unknown",
+      "source_license": "Natural Earth public domain"
+    }
+  ],
+  "country_count": 14,
+  "special_region_count": 0,
+  "regions_missing_reason": "ADM1 boundaries are not present in the offline reference shapefile. build_geofences.py downloads these from geoBoundaries when run with internet access.",
+  "crs": "EPSG:4326"
+}
